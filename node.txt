@@ -6,3 +6,20 @@ hashing algorithms
 how to access variable inside callback to outside
 when and where try catch block is required
 How to ignore node-modules
+
+https://medium.com/tfogo/advantages-and-pitfalls-of-arrow-functions-a16f0835799e
+
+hoisting 
+closure definition
+map reduce
+
+is instanceOf can be used without new
+let keyword and how it's different from var.
+#dynamicaly typed means language figures out what types of things are on the fly
+
+Object.is
+
+oxfam india
+
+
+http://www.bgr.in/how-to-2/how-to-submit-epf-claim-online-withdraw-money-without-previous-employer-signature/?gclid=CjwKCAjw2MTbBRASEiwAdYIpsUTf8ZSUU3RtiWXZlG110g7kscf2qcvvWxLc5TdqOfozquwTPJCULhoC4HMQAvD_BwE

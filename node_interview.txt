@@ -1,0 +1,96 @@
+Node Interview Preparation
+
+Node.js is a server side scripting based on Google’s V8 JavaScript engine. It is used for web applications that are computationally simple but are frequently accessed.
+
+Advnatag eof node.js---
+1. It almost never blocks
+2. It offers a unified programming language and data type
+3. It yields great concurrency
+4. Everything is asynchronous
+
+node.js uses asynchronous, event-driven I/O instead of separate processes or threads. It is able to achieve high output via single-threaded event loop and non-blocking I/O.
+
+Callback----
+A callback function is called at the completion of a given task. This allows other code to be run in the meantime and prevents any blocking. 
+
+Callback hell----
+Callback hell is the result of heavily nested callbacks that make the code not only unreadable but also difficult to maintain.
+
+There are two types of functions in Node.js.:
+Blocking functions - In a blocking operation, all other code is blocked from executing until an I/O event that is being waited on occurs. Blocking functions execute synchronously
+For example:
+const fs = require('fs');
+const data = fs.readFileSync('/file.md'); // blocks here until file is read
+console.log(data);
+// moreWork(); will run after console.log
+
+
+Non-blocking functions - In a non-blocking operation, multiple I/O calls can be performed without the execution of the program being halted.  Non-blocking functions execute asynchronously. 
+For example:
+
+const fs = require('fs');
+fs.readFile('/file.md', (err, data) => {
+  if (err) throw err;
+  console.log(data);
+});
+// moreWork(); will run before console.log
+
+
+Chaining is a mechanism whereby the output of one stream is connected to another stream creating a chain of multiple stream operations. 
+
+keywords in node.js
+Global – it represents the Global namespace object and acts as a container for all other objects.
+Process – It is one of the global objects but can turn a synchronous function into an async callback. It can be accessed from anywhere in the code and it primarily gives back information about the application or the environment. 
+Buffer – it is a class in Node.js to handle binary data.
+
+//just a syntax
+throw err;
+new Error("Error occured")
+
+
+Promises is helped to reduce callback hell
+
+Node.js is used to build scalable network application using javascript on the server side. It's fast because it's code is wriiten in C.
+Node.js benefit is that it's concurrency based on events.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
